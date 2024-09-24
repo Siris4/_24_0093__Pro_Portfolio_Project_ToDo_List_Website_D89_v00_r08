@@ -1,0 +1,200 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+.header {
+    background-color: #41AB5D; /* Green header */
+    color: white;
+    padding: 14px; /* Reduced padding to make the header thinner */
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the date header */
+    align-items: center; /* Vertically center the header content */
+}
+
+/* Date header font size increase and remove bold */
+#date-header {
+    font-size: calc(100% + 50%); /* Increase the size by 50% */
+    font-weight: normal; /* Ensure the text is not bold */
+    margin: 0; /* Remove margin to prevent shifting */
+}
+
+/* Navigation links aligned to the right */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    right: 20px; /* Positioning the links on the far right */
+    top: 50%;
+    transform: translateY(-50%); /* Ensure vertical centering */
+    align-items: center; /* Vertically align all navigation items */
+}
+
+/* Styling for the navigation links */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Button to save the list */
+.save-list-btn {
+    background-color: #41AB5D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: center; /* Ensure button is vertically aligned */
+}
+
+/* Main content styling */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Input box for new tasks */
+.new-task-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Styling the task list */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative; /* Keep tasks within the container */
+}
+
+/* Styling individual task items */
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between drag handle, task name, and delete button */
+    background-color: white;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+    cursor: pointer; /* Visual feedback for drag action */
+}
+
+/* Drag handle for reordering tasks */
+.drag-handle {
+    cursor: move;
+    font-size: 24px;
+    color: #ccc;
+    margin-right: 10px;
+}
+
+/* Checkbox for task completion */
+.task-checkbox {
+    margin-right: 10px;
+}
+
+/* Styling for the task name */
+.task-name {
+    flex: 1;
+    overflow: hidden; /* Prevent text overflow */
+    padding: 0;
+}
+
+/* Input field when editing a task */
+.edit-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: inherit; /* Match the font size of the original text */
+}
+
+/* Styling for the delete button (red text) */
+.delete-task {
+    color: #ff4d4d;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-task:hover {
+    color: #ff1a1a;
+}
+
+/* Footer with the thin green border */
+.footer {
+    background-color: #41AB5D; /* Green footer */
+    height: 4px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Authentication form styling (login and register forms) */
+.auth-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #41AB5D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    background-color: #369048;
+}
+
+/* Register and login link styling */
+.register-link, .login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-link a, .login-link a {
+    color: #41AB5D;
+    text-decoration: none;
+}
+
+.register-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
